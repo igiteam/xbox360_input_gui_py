@@ -69,8 +69,8 @@ A comprehensive Python application that turns your Xbox 360 wireless controller 
 
 ### 1. Clone the Repository
 ```
-git clone https://github.com/yourusername/xbox360-controller-gui.git
-cd xbox360-controller-gui
+git clone https://github.com/igiteam/xbox360_input_gui_py
+cd xbox360_input_gui_py
 ```
 
 2. Install System Dependencies
