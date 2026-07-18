@@ -5,3 +5,4 @@ Pillow
 libusb
 pyaudio
 numpy
+pygame
