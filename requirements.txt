@@ -1,0 +1,7 @@
+pyusb
+keyboard
+pyautogui
+Pillow
+libusb
+pyaudio
+numpy
