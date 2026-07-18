@@ -197,9 +197,9 @@ BUTTON_MAP = {
     # ...
 }
 
-\`\`\`
 📁 Project Structure
 
+\`\`\`
 xbox360-controller-gui/
 ├── xbox360_controller_input_gui_ofp.py  # Main application
 ├── README.md                             # This file
