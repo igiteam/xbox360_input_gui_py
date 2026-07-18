@@ -68,27 +68,36 @@ A comprehensive Python application that turns your Xbox 360 wireless controller 
 ## 🚀 Installation
 
 ### 1. Clone the Repository
+```
 git clone https://github.com/yourusername/xbox360-controller-gui.git
 cd xbox360-controller-gui
+```
 
 2. Install System Dependencies
 
 macOS:
+```
 brew install libusb
-
+```
 Linux (Ubuntu/Debian):
+```
 sudo apt-get install libusb-1.0-0-dev
+```
 
 Windows:
     Install libusb-win32
     Or use Zadig to install WinUSB driver
 
 3. Create Virtual Environment (Recommended)
+```
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
 4. Run the Application
+```
 python3 xbox360_controller_input_gui_ofp.py
+```
 
 The script will automatically install all Python dependencies.
 🎯 How to Use
@@ -164,12 +173,16 @@ Rumble Not Working
 USB Permission Issues (Linux)
 
 # Add user to plugdev group
+```
 sudo usermod -a -G plugdev $USER
+```
 
 # Create udev rule
+```
 echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="0291", MODE="0666"' | sudo tee /etc/udev/rules.d/50-xbox360.rules
 sudo udevadm control --reload-rules
 sudo udevadm trigger
+```
 
 Input Lag
 - Async mouse processing is enabled by default
@@ -190,12 +203,13 @@ The application is optimized for Operation Flashpoint with the following mapping
 
 ### Other Games
 You can customize the button mappings in the BUTTON_MAP dictionary:
-
+```
 BUTTON_MAP = {
     'A': 'v',      # Change to your preferred key
     'B': 'r',      # Change to your preferred key
     # ...
 }
+```
 
 📁 Project Structure
 
